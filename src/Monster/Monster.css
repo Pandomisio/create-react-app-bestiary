@@ -1,0 +1,147 @@
+.monster {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* min-width: 1000px;
+    max-width: 1000px; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* margin: 20px 0px; */
+    font-weight: bold;
+}
+
+.monster::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    max-width: 1000px;
+    min-width: 950px;
+    min-height: 150px;
+    /* transform: translateX(-100%); */
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur(15px);
+    z-index: -5;
+}
+
+.monster__div:hover {
+    box-shadow: inset 0px 0px 10px 4px white, 0px 0px 10px 4px white;
+}
+
+.monster__div:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.monster__div:nth-child(even):hover {
+    color: black;
+    box-shadow: inset 0px 0px 10px 4px black, 0px 0px 10px 4px black;
+}
+
+.monster:nth-child(odd) {
+    
+    /* border: 1px solid black; */
+}
+
+/* @media only screen and (max-width: 360px) {
+    .monster {
+      background-color: lightblue;
+    }
+    .monster:nth-child(even){
+        background-color: lightblue;
+        border: 1px solid rgba(0, 0, 0, 0.521);
+    }
+  } */
+
+.label {
+    /* max-width: 100px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100px;
+    margin: 0px;
+}
+
+.label__name {
+    min-width: 170px;
+    flex-basis: 130px;
+}
+
+.demage {
+    margin: 0;
+    padding: 5px;
+}
+
+.demage2 {
+    border-top: 1px solid rgb(214, 214, 214);
+}
+
+.monster__img {
+    position: relative;
+    display: none;
+    width: 0px;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(50px);
+}
+
+.img__img {
+    position: absolute;
+    height: 350px;
+    z-index: 1;
+}
+
+.monster__div:hover .monster__img {
+    display: flex;
+    animation-name: showmonster;
+    animation-duration: 0.75s;
+}
+
+@keyframes showmonster {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.lower {
+    height: 200px;
+}
+
+.icon {
+    width: 30px;
+    margin: 5px;
+}
+
+.label__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.monster__div {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 900px;
+    max-width: 1000px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0px 0px 20px 0px;
+}

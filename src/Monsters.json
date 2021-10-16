@@ -1,0 +1,48 @@
+{
+    "Monsters": [
+        {
+            "id":1,
+            "name": "Alghul",
+            "weakness": 46,
+            "rare": 1,
+            "demage2": null,
+            "attack": "Silny",
+            "sword": "Srebro",
+            "demage": "----",
+            "cluster": "Trupojady"
+        },
+        {
+            "id":2,
+            "name": "Alghul",
+            "weakness": 46,
+            "rare": 1,
+            "demage2": null,
+            "attack": "Silny",
+            "sword": "Srebro",
+            "demage": "----",
+            "cluster": "Trupojady"
+        },
+        {
+            "id":3,
+            "name": "Alghul",
+            "weakness": 46,
+            "rare": 1,
+            "demage2": null,
+            "attack": "Silny",
+            "sword": "Srebro",
+            "demage": "----",
+            "cluster": "Trupojady"
+        },
+        {
+            "id":4,
+            "name": "Alghul",
+            "weakness": 46,
+            "rare": 1,
+            "demage2": null,
+            "attack": "Silny",
+            "sword": "Srebro",
+            "demage": "----",
+            "cluster": "Trupojady"
+        }
+    ]
+}
